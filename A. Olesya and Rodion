@@ -1,0 +1,44 @@
+#include <iostream>
+     
+    using namespace std;
+     
+    int pow(int a,int b)
+    {
+    	long long p(1);
+    	for (int i=0;i<b;i++)
+    		p*=a;
+    	return p;
+     
+    }
+     
+    int main()
+    {
+    	int n;
+    	cin >> n;
+    	int t;
+    	long long i;
+    	cin >> t;
+    	if (n==1)
+    	{
+    		if(t==10)
+    		{
+    			cout << "-1";
+    			return 0;
+    		}
+    		cout << t;
+    		return 0;
+    	}
+        if (t==10)
+        {
+            for(i=1;i<n;i++)
+                cout<< "1";
+            cout <<"0";
+            return 0;
+        }
+    	for (i=1;i<n+1;i++)
+    	{
+    		cout<< t ;
+    		
+    	}
+    	return 0;
+    }
