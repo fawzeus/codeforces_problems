@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+long long int t,x;
+cin>>t;
+while(t--)
+{
+    cin>>x;
+    if (x<15)
+        {
+            cout<<"NO\n";
+        }
+    else if(x<=20)
+        {
+            cout<<"YES\n";
+        }
+    else
+    {
+        x=x%14;
+         if(x<=6 and x>0)
+        {
+            cout<<"YES\n";
+        }
+        else
+        {
+            cout<<"NO\n";
+        }
+        
+        
+    }
+    
+}
+}
